@@ -1,0 +1,19 @@
+.footer{
+    width: 100%;
+    height: 155px;
+    background-color: rgb(10, 10, 10);
+
+    &-contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-derechos{
+           color: white;
+           margin: 0 60px 0 0;
+        }
+        &-map{
+            margin-top: 25px;
+        }
+    }
+}

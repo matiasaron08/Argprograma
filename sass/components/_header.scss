@@ -1,0 +1,130 @@
+.inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    &-menu{
+        width: 100%;
+        height: 70px;
+        background-color: #36213ebe;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+
+        &-logo{
+            width: 250px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #36213e;
+            color: #ffffff;
+        }
+
+        &-navBar{
+            width: 500px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-ul{
+                display: flex;
+
+                &-li{
+                    padding: 5px 10px;
+                    margin: 0 2px;
+                    border: 1px solid transparent;
+                    transition: 1s;
+
+                    &:hover{
+                        animation-name: bordes;
+                        animation-duration: 3s;
+                        animation-iteration-count: infinite;
+                    }
+
+                    &-link{
+                        font-weight: bold;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &-globo{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 250px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        display: block;
+        align-items: center;
+        justify-content: center;
+
+        &-h1{
+            font-weight: bold;
+            letter-spacing: 7px;
+            font-size: 6rem;
+            color: #36213e;
+            text-shadow: 0 0 15px rgb(255, 255, 255);
+        }
+        &-p{
+            font-weight: bold;
+            letter-spacing: 7px;
+            font-size: 1rem;
+            color: #36213e;
+            text-shadow: 0 0 15px rgb(255, 255, 255);
+        }
+
+    }
+
+    .arrow{
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        background-color: #f39be48e;
+        position: absolute;
+        left: 633px;
+        bottom: 70px;
+        padding-top: 3px;
+        transition: all 1s;
+
+        &:hover{
+            box-shadow: 0 0 10px #e985e4;
+            background-color: #241121b9;
+        }
+
+        &-link{
+            color: #220d21;
+            font-size: 37px;
+            transition: all 1s;
+
+            &:hover{
+                color: #e985e4;
+            }
+        }
+    }
+}
+@keyframes bordes {
+    0%{
+        border-bottom: 1px solid #F06543;
+    }
+    25%{
+        border-left: 1px solid #F06543;
+    }
+    50%{
+        border-top: 1px solid #F06543;
+    }
+    100%{
+        border-right: 1px solid #F06543;
+    }
+}
